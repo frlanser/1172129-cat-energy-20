@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Подбор программы</title>
+  <base href="https://htmlacademy-adaptive.github.io/1172129-cat-energy-20/3/">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <img src="https://placehold.it/150" alt="">
+
+        <nav class="nav">
+          <a class="nav__link" href="index.html">Главная</a>
+          <a class="nav__link" href="catalog.html">Каталог продукции</a>
+          <a class="nav__link" href="#">Подбор программы</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav_toggle" type="button">
+          <span class="nav-toggle__item">Меню</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- section -->
+  <section class="section">
+    <form class="form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="container">
+        <h1 class="section__title">Подбор программы</h1>
+        <div class="selection">
+          <p class="selection__text">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+          <div class="selection__item">
+            <label for="name">ИМЯ:*</label>
+            <input type="text" name="name" id="name" placeholder="барсик">
+
+            <label for="weight">Вес (кг):*</label>
+            <input type="text" name="weight" id="weight" placeholder="7">
+
+            <label for="age">Возраст (лет):</label>
+            <input type="text" name="age" id="age" placeholder="7">
+          </div><!-- /.selection__item -->
+
+          <div class="selection__item">
+            <input type="radio" name="weight-selection" id="weight-loss" checked>
+            <label for="weight-loss">похудение</label>
+
+            <input type="radio" name="weight-selection" id="weight-gain">
+            <label for="weight-gain">Набор массы</label>
+
+            <input type="radio" name="weight-selection" id="weight-unknown">
+            <label for="weight-unknown">Не знаю (Нужен ваш совет)</label>
+          </div>
+        </div><!-- /.selection -->
+      </div><!-- /.container -->
+
+
+      <!-- contacts -->
+      <fieldset class="fieldset">
+        <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
+        <div class="container">
+          <div class="contacts">
+            <label for="input-email">E-mail:*</label>
+            <input type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com">
+
+            <label for="input-tel">Телефон:*</label>
+            <input type="tel" name="tel" id="input-tel" placeholder="8 (960) 900-60-90">
+          </div>
+        </div><!-- /.container -->
+      </fieldset><!-- /.contacts -->
+
+
+      <!-- comment -->
+      <fieldset class="fieldset">
+        <legend class="fieldset__title">Комментарий</legend>
+        <div class="container">
+          <div class="comment">
+            <textarea name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div><!-- /.comment -->
+        </div><!-- /.container -->
+      </fieldset><!-- /.fieldset -->
+
+
+      <!-- extra -->
+      <fieldset class="fieldset">
+        <legend class="fieldset__title">Дополнительно</legend>
+        <div class="container">
+          <div class="extra">
+            <input type="checkbox" name="sugar" id="sugar">
+            <label for="sugar">сахарозаменитель</label>
+
+            <input type="checkbox" name="water" id="water">
+            <label for="water">питьевая вода</label>
+
+            <input type="checkbox" name="milk" id="milk">
+            <label for="milk">молоко</label>
+
+            <input type="checkbox" name="vitamins" id="vitamins">
+            <label for="vitamins">витамины</label>
+          </div><!-- /.extra -->
+        </div><!-- /.container -->
+      </fieldset><!-- /.fieldset -->
+
+
+      <div class="form__submit">
+        <div class="container">
+          <button class="btn" type="submit">отправить заявку</button>
+          <p class="form__submit-text">* — Обязательные поля</p>
+        </div>
+      </div>
+    </form><!-- /.form -->
+  </section><!-- /.section -->
+
+
+  <!-- Address -->
+  <div class="address  address--gray">
+    <div class="container">
+      <div class="address__inner">
+        <div class="address__title">приглашаем к сотрудничеству дилеров!</div>
+        <div class="address__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Map -->
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1595345413282!5m2!1sru!2sua"
+      style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <img src="https://placehold.it/130" alt="">
+
+        <div class="social">
+          <a class="social__item" href="#" target="_blank">
+            <!-- svg -->
+          </a>
+          <a class="social__item" href="#" target="_blank">
+            <!-- svg -->
+          </a>
+          <a class="social__item" href="#" target="_blank">
+            <!-- svg -->
+          </a>
+        </div>
+
+        <div class="copyright">
+          <a class="copyright__item" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            HTML Academy
+          </a>
+          <a class="copyright__item" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <!-- svg -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
