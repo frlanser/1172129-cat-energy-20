@@ -79,7 +79,10 @@
       padding-bottom: 0;
       margin-bottom: 40px; }
     .section--products {
-      padding-bottom: 75px; } }
+      padding-bottom: 75px; }
+    .section--example {
+      padding-bottom: 75px;
+      background: linear-gradient(180deg, white 38%, #eaeaea 38%); } }
 
 /* Header */
 .header__inner {
@@ -707,6 +710,11 @@
   text-align: center;
   color: #000000; }
 
+.example__slider-photo__before {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; }
+
 .example__slider-photo__after {
   display: none; }
 
@@ -780,8 +788,8 @@
       margin-bottom: 10px; }
     .example__slider-wrapper {
       position: relative;
-      max-width: 710px;
-      height: 620px;
+      max-width: 900px;
+      height: 545px;
       margin: 0 auto;
       display: flex; }
     .example__slider-photo__inner-first, .example__slider-photo__inner-second {
@@ -798,11 +806,10 @@
       -o-object-fit: cover;
          object-fit: cover; }
     .example__slider-photo__before {
+      max-width: initial;
       float: left; }
     .example__slider-photo__after {
       display: block;
-      max-width: 100%;
-      height: auto;
       float: right; }
     .example__slider-range {
       margin-top: 30px; }
@@ -844,6 +851,34 @@
       font-size: 20px;
       line-height: 1.5;
       border-bottom: 1px dotted #cdcdcd; } }
+
+@media (min-width: 1250px) {
+  .example {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    -moz-column-gap: 134px;
+         column-gap: 134px;
+    align-items: flex-end; }
+    .example__content {
+      margin: 0; }
+    .example__content-maintext {
+      margin: 0;
+      margin-bottom: 69px; }
+    .example__content-footer {
+      justify-content: start;
+      align-items: flex-start;
+      flex-direction: column; }
+    .example__content-fieldsets {
+      margin-bottom: 55px; }
+    .example__cost {
+      max-width: initial;
+      text-align: left; }
+    .example__cost-text {
+      margin-bottom: 0;
+      margin-right: 63px; }
+    .example__slider-wrapper {
+      max-width: 705px;
+      height: 536px; } }
 
 /* Address */
 .address--gray {
