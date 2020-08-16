@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -200,9 +200,6 @@
 /* Copyright */
 .copyright {
   padding-top: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   border-top: 1px solid #d9d9d9; }
   .copyright__logo {
@@ -210,11 +207,14 @@
     width: 27px;
     height: 34px;
     transition: fill 0.2s linear; }
-    .copyright__logo:hover {
-      fill: #68b738; }
   .copyright__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     transition: opacity 0.2s linear; }
+    .copyright__link:hover .copyright__logo {
+      fill: #68b738; }
     .copyright__link:active {
       opacity: 0.3; }
   .copyright__text {
@@ -1455,7 +1455,7 @@
     flex-grow: 1;
     margin-left: 10px;
     height: 45px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid #e7e7e7;
     padding: 0 30px 0 10px;
     outline: none;
     transition: border 0.2s linear; }
@@ -1533,6 +1533,10 @@
     font-size: 16px;
     line-height: 1.12;
     color: #444444; }
+    .user-comment__textarea:hover {
+      border: 1px solid #cdcdcd; }
+    .user-comment__textarea:focus {
+      border: 2px solid #444444; }
 
 /* User Comment Media*/
 @media (min-width: 768px) {
@@ -1667,6 +1671,11 @@ ol {
   display: block;
   max-width: 100%;
   height: auto; }
+
+input,
+textarea {
+  font-family: "Oswald", sans-serif;
+  font-size: 100%; }
 
 .container {
   width: 100%;
