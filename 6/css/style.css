@@ -1124,34 +1124,35 @@
   border: none;
   border-top: 2px solid #68b738; }
   .fieldset__title {
-    padding-left: 19px;
-    padding-right: 22px;
+    margin-top: -16px;
     font-size: 24px;
     line-height: 1.08;
     font-weight: 400;
-    color: #000000; }
+    color: #000000;
+    background-color: #ffffff; }
+    .fieldset__title--first {
+      max-width: 230px; }
+    .fieldset__title--second {
+      max-width: 187px; }
+    .fieldset__title--third {
+      max-width: 125px; }
+    .fieldset__title--fourth {
+      max-width: 145px; }
 
 /* Fieldset Media */
 @media (min-width: 768px) {
-  .fieldset {
-    border: none; }
-    .fieldset__title {
-      padding: 0;
-      font-size: 36px;
-      line-height: 1;
-      width: 100%;
-      display: flex;
-      white-space: nowrap;
-      align-items: center; }
-      .fieldset__title::before, .fieldset__title::after {
-        content: "";
-        border-top: 2px solid #68b738;
-        width: 100%; }
-      .fieldset__title::before {
-        margin-right: 36px;
-        width: 70px; }
-      .fieldset__title::after {
-        margin-left: 36px; } }
+  .fieldset__title {
+    margin-top: -23px;
+    font-size: 36px;
+    line-height: 1; }
+    .fieldset__title--first {
+      max-width: 345px; }
+    .fieldset__title--second {
+      max-width: 520px; }
+    .fieldset__title--third {
+      max-width: 185px; }
+    .fieldset__title--fourth {
+      max-width: 215px; } }
 
 /* Additional */
 .additional {
