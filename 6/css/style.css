@@ -483,7 +483,6 @@
     padding-bottom: 23px;
     margin-bottom: 15px;
     border-bottom: 1px solid #d9d9d9;
-    max-width: 227px;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -733,6 +732,10 @@
   text-align: center;
   color: #000000; }
 
+.example__slider-photo__inner-first {
+  display: flex;
+  justify-content: center; }
+
 .example__slider-photo__before {
   max-width: 100%;
   -o-object-fit: contain;
@@ -815,6 +818,9 @@
       height: 545px;
       margin: 0 auto;
       display: flex; }
+    .example__slider-photo__inner-first {
+      display: flex;
+      justify-content: start; }
     .example__slider-photo__inner-first, .example__slider-photo__inner-second {
       width: 50%;
       height: 100%;
@@ -1124,20 +1130,19 @@
   border: none;
   border-top: 2px solid #68b738; }
   .fieldset__title {
-    margin-top: -16px;
+    display: inline-block;
+    background: white;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0 20px;
+    margin: -16px 0 0 -20px;
     font-size: 24px;
     line-height: 1.08;
     font-weight: 400;
-    color: #000000;
-    background-color: #ffffff; }
-    .fieldset__title--first {
-      max-width: 230px; }
+    color: #000000; }
     .fieldset__title--second {
-      max-width: 187px; }
-    .fieldset__title--third {
-      max-width: 125px; }
-    .fieldset__title--fourth {
-      max-width: 145px; }
+      max-width: 221px; }
 
 /* Fieldset Media */
 @media (min-width: 768px) {
@@ -1145,14 +1150,8 @@
     margin-top: -23px;
     font-size: 36px;
     line-height: 1; }
-    .fieldset__title--first {
-      max-width: 345px; }
     .fieldset__title--second {
-      max-width: 520px; }
-    .fieldset__title--third {
-      max-width: 185px; }
-    .fieldset__title--fourth {
-      max-width: 215px; } }
+      max-width: 555px; } }
 
 /* Additional */
 .additional {
@@ -1296,7 +1295,7 @@
 
 /* Selection */
 .selection {
-  margin-bottom: 26px;
+  margin-bottom: 36px;
   /* selection items 2 */
   /* стили при наведении курсора на checkbox */
   /* ./selection items 2*/ }
@@ -1429,7 +1428,7 @@
 
 /* User-Contacts */
 .user-contacts {
-  margin: 32px 0 27px; }
+  margin: 32px 0 43px; }
   .user-contacts__group {
     margin-bottom: 14px;
     display: flex;
@@ -1520,7 +1519,7 @@
 
 /* User Comment */
 .user-comment {
-  margin: 34px 0 27px; }
+  margin: 34px 0 43px; }
   .user-comment__textarea {
     margin: 0;
     padding: 13px 15px;
