@@ -587,7 +587,13 @@
 
 /* About */
 .about {
-  margin-top: 38px; }
+  margin-top: 38px;
+  max-width: 310px;
+  /*new*/
+  margin-left: auto;
+  /*new*/
+  margin-right: auto;
+  /*new*/ }
   .about__list {
     list-style: none;
     padding-left: 80px; }
@@ -632,7 +638,9 @@
 /* About Media */
 @media (min-width: 768px) {
   .about {
-    padding-right: 79px; }
+    padding-right: 79px;
+    max-width: none;
+    /*new*/ }
     .about__list {
       padding-left: 0;
       display: grid;
