@@ -53,7 +53,7 @@
   .section--intro {
     padding-top: 0;
     padding-bottom: 0;
-    background: url("../img/index-background-mobile@1x.jpg") no-repeat center top; }
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat center top, linear-gradient(180deg, #63a73a 305px, white 305px); }
   .section--services {
     padding-bottom: 0; }
   .section--about {
@@ -367,7 +367,13 @@
 .intro {
   text-align: center;
   padding-top: 27px;
-  position: relative; }
+  position: relative;
+  margin-left: auto;
+  /*new*/
+  margin-right: auto;
+  /*new*/
+  max-width: 320px;
+  /*new*/ }
   .intro__title {
     margin-bottom: 25px;
     font-size: 36px;
@@ -397,7 +403,9 @@
     padding-top: 62px;
     padding-left: 90px;
     padding-bottom: 405px;
-    text-align: left; }
+    text-align: left;
+    max-width: none;
+    /*new*/ }
     .intro::after {
       content: "";
       width: 508px;
@@ -615,7 +623,7 @@
       background-image: url("../img/advantage-leaf@1x.png");
       background-repeat: no-repeat;
       position: absolute;
-      left: -37.5%;
+      left: -35.5%;
       top: 6%;
       z-index: 2; }
     .about__text::after {
@@ -626,7 +634,7 @@
       background: #68b738;
       position: absolute;
       top: -4%;
-      left: -40%;
+      left: -38%;
       z-index: -1; }
   .about__text--powder::before {
     background-image: url("../img/advantage-powder@1x.png"); }
@@ -1192,7 +1200,13 @@
     color: #444444; }
   .additional__gift {
     margin-bottom: 35px;
-    position: relative; }
+    position: relative;
+    max-width: 280px;
+    /*new*/
+    margin-left: auto;
+    /*new*/
+    margin-right: auto;
+    /*new*/ }
   .additional__gift-icon {
     width: 56px;
     height: 60px;
@@ -1247,7 +1261,9 @@
       .additional__list-text:last-child {
         margin-right: 0; }
     .additional__gift {
-      margin-bottom: 76px; }
+      margin-bottom: 76px;
+      max-width: none;
+      /*new*/ }
     .additional__gift-icon {
       top: 50%;
       transform: translateY(-50%);
