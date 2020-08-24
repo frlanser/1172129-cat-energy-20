@@ -107,7 +107,7 @@
     .section--about {
       padding-top: 32px; }
     .section--products {
-      padding: 75px 0 90px; }
+      padding: 75px 0 95px; }
     .section--example {
       padding-top: 30px;
       padding-bottom: 65px;
@@ -1210,11 +1210,12 @@
   .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     -moz-column-gap: 80px;
          column-gap: 80px;
-    row-gap: 144px; }
+    row-gap: 142px; }
     .products__item {
-      padding: 162px 30px 43px 35px; } }
+      padding: 162px 30px 31px 35px; } }
 
 /* Fieldset */
 .fieldset {
