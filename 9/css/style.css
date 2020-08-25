@@ -86,7 +86,7 @@
       padding-top: 0;
       padding-bottom: 0; }
     .section--example {
-      background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
+      background: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 57%);
       padding-bottom: 65px; }
     .section--products {
       padding: 65px 0 80px; }
@@ -839,7 +839,7 @@
   border-radius: 6px; }
 
 .example__slider-text {
-  margin: 0px 15px 0 20px;
+  margin: 0 15px 0 20px;
   font-size: 16px;
   line-height: 1.25;
   color: #000000;
@@ -862,8 +862,7 @@
       line-height: 1.5; }
     .example__content-footer {
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      justify-content: space-between; }
     .example__content-fieldsets {
       margin: 0;
       display: flex;
@@ -884,6 +883,7 @@
       .example__content-text--another {
         margin: 3px 15px; }
     .example__cost {
+      margin-top: 10px;
       max-width: 174px;
       text-align: right;
       font-size: 20px;
@@ -981,8 +981,9 @@
       align-items: flex-start;
       flex-direction: column; }
     .example__content-fieldsets {
-      margin-bottom: 55px; }
+      margin-bottom: 59px; }
     .example__cost {
+      margin-top: 0;
       max-width: initial;
       text-align: left; }
     .example__cost-text {
@@ -1036,8 +1037,7 @@
     padding: 65px 40px 60px; }
   .address__text-bold {
     max-width: 170px;
-    font-size: 20px;
-    line-height: 1.1; }
+    font-size: 20px; }
   .address__text {
     max-width: 160px;
     text-align: right;
@@ -1111,6 +1111,7 @@
     padding-top: 11px;
     padding-bottom: 11px; }
   .products__item--special {
+    padding-top: 26px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1120,7 +1121,7 @@
     height: 30px;
     fill: #d3d3d3; }
   .products__title-special {
-    margin-top: 25px;
+    margin-top: 19px;
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.25;
@@ -1441,7 +1442,7 @@
     margin-left: 13px;
     height: 45px;
     border: 1px solid #e7e7e7;
-    padding: 0 10px;
+    padding: 0 15px;
     outline: none;
     transition: border 0.2s linear; }
     .selection__input::-moz-placeholder {
@@ -1601,7 +1602,7 @@
     margin-left: 10px;
     height: 45px;
     border: 1px solid #e7e7e7;
-    padding: 0 30px 0 10px;
+    padding: 0 30px 0 15px;
     outline: none;
     transition: border 0.2s linear; }
     .user-contacts__input::-moz-placeholder {
@@ -1671,7 +1672,7 @@
   margin: 34px 0 43px; }
   .user-comment__textarea {
     margin: 0;
-    padding: 13px 15px;
+    padding: 13px;
     border: 1px solid #e7e7e7;
     display: block;
     width: 100%;
