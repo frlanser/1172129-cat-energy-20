@@ -172,7 +172,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 39px 0 22px; }
+    padding: 34px 0 22px; }
   .footer__logo {
     width: 128px;
     height: 24px;
@@ -182,14 +182,14 @@
     .footer__logo:active {
       opacity: 0.6; }
   .footer__logo-link {
-    padding-bottom: 32px;
+    padding-bottom: 28px;
     border-bottom: 1px solid #d9d9d9;
     width: 100%;
     text-align: center; }
 
 /* Social */
 .social {
-  padding: 20px 0;
+  padding: 20px 0 17px;
   width: 130px;
   display: flex;
   justify-content: space-between;
