@@ -972,17 +972,21 @@
     align-items: flex-end; }
     .example__content {
       margin: 0; }
+    .example__content-legend {
+      max-width: none;
+      padding: 0 6px; }
     .example__content-maintext {
       margin: 0;
       margin-top: 50px;
-      margin-bottom: 69px; }
+      margin-bottom: 68px; }
     .example__content-footer {
       justify-content: start;
       align-items: flex-start;
       flex-direction: column; }
     .example__content-fieldsets {
-      margin-bottom: 59px; }
+      margin-bottom: 57px; }
     .example__cost {
+      padding-bottom: 8px;
       margin-top: 0;
       max-width: initial;
       text-align: left; }
