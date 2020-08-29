@@ -207,18 +207,26 @@
   .social__item-link {
     text-decoration: none; }
   .social__item {
-    fill: #666666;
     width: 23px;
     height: 16px;
-    transition: fill 0.2s linear, opacity 0.2s linear; }
+    transition: fill 0.2s linear, opacity 0.2s linear, stroke 0.2s linear; }
+    .social__item--vk {
+      fill: #666666; }
+      .social__item--vk:hover {
+        fill: #68b738; }
     .social__item--instagram {
+      fill: #666666;
       width: 16px;
       height: 16px; }
+      .social__item--instagram:hover {
+        fill: #68b738; }
     .social__item--facebook {
+      fill: none;
+      stroke: #666666;
       width: 22px;
       height: 22px; }
-    .social__item:hover {
-      fill: #68b738; }
+      .social__item--facebook:hover {
+        stroke: #68b738; }
     .social__item:active {
       opacity: 0.3; }
 
@@ -268,8 +276,8 @@
         width: 23px;
         height: 23px; }
       .social__item--facebook {
-        width: 13px;
-        height: 27px; }
+        width: 28px;
+        height: 33px; }
   .copyright {
     justify-content: space-around;
     width: 163px;
@@ -1149,8 +1157,7 @@
     text-align: center; }
   .products__photo-plus {
     width: 30px;
-    height: 30px;
-    fill: #d3d3d3; }
+    height: 30px; }
   .products__title-special {
     margin-top: 19px;
     margin-bottom: 10px;
