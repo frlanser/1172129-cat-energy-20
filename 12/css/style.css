@@ -1631,9 +1631,13 @@
     right: 10px;
     top: 12px; }
     .user-contacts__icon--mail {
+      width: 20px;
+      height: 14px;
       top: 14px;
       stroke: #222222; }
     .user-contacts__icon--phone {
+      width: 20px;
+      height: 20px;
       fill: #000000; }
   .user-contacts__input {
     flex-grow: 1;
