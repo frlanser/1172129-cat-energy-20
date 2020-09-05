@@ -1,11 +1,1 @@
-$(function() {
-
-  $("#nav_toggle").on("click", function(event) {
-    event.preventDefault();
-
-    $(this).toggleClass("active");
-    $("#nav").toggleClass("active");
-  });
-
-
-});
+$(function(){$("#nav_toggle").on("click",function(t){t.preventDefault(),$(this).toggleClass("active"),$("#nav").toggleClass("active")})});
