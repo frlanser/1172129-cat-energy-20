@@ -29,21 +29,11 @@
     max-width: 140px;
 
     font-family: "Arial", sans-serif;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.43;
     color: $gray-900;
   }
-}
-
-/* Map */
-.map {
-  width: 100%;
-}
-
-.map iframe {
-  display: block;
-  width: 100%;
-  min-height: 362px;
 }
 
 /* Address Media */
@@ -75,11 +65,6 @@
       display: inline-block;
       margin-bottom: 20px;
     }
-  }
-
-  /* Map */
-  .map iframe {
-    min-height: 400px;
   }
 }
 

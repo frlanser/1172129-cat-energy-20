@@ -38,12 +38,17 @@
     background-size: 50% 50%;
   }
 
+  &__checkbox:active + label {
+    opacity: 0.3;
+  }
+
   &__checkbox:checked + label::before {
     background-color: #ffffff;
-    background-image: url("../img/icon-tick.svg");
+    background-image: url("../../img/icon-tick.svg");
   }
 
   &__label {
+    cursor: pointer;
     flex-grow: 1;
     font-size: 16px;
     line-height: 1.12;

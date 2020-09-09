@@ -11,12 +11,16 @@
     height: 150px;
     resize: none;
     outline: none;
-    text-transform: uppercase;
 
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.12;
     color: $gray-900;
+
+    &::placeholder {
+      color: $gray-900;
+      text-transform: uppercase;
+    }
 
     &:hover {
       border: 1px solid $gray-500;

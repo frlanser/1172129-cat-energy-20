@@ -1,55 +1,10 @@
-/* Btn */
-.btn {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 7px 44px;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #ffffff;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  background: $green-500;
-  border: 0;
-  text-decoration: none;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.2s linear;
-
-  &:hover {
-    background: $green-700;
-  }
-
-  &:focus {
-    color: rgba(white, 0.3);
-  }
-
-  &--block {
-    display: block;
-    width: 100%;
-  }
-
-  &--gray {
-    background: $gray-300;
-    color: $gray-900;
-
-    &:hover {
-      background: $gray-350;
-    }
-
-    &:focus {
-      color: rgba($gray-900, 0.3);
-    }
-  }
-}
-
 /* Section */
 .section {
   padding-top: 27px;
   padding-bottom: 25px;
 
   &__title {
+    margin: 0;
     font-size: 36px;
     line-height: 1.1;
     color: #000000;
@@ -292,97 +247,6 @@
   }
 }
 
-/* Social */
-.social {
-  padding: 20px 0 17px;
-  width: 130px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__item-link {
-    text-decoration: none;
-  }
-
-  &__item {
-    width: 23px;
-    height: 16px;
-    transition: fill 0.2s linear, opacity 0.2s linear, stroke 0.2s linear;
-
-    &--vk {
-      fill: $gray-800;
-
-      &:hover {
-        fill: $green-500;
-      }
-    }
-
-    &--instagram {
-      fill: $gray-800;
-      width: 16px;
-      height: 16px;
-
-      &:hover {
-        fill: $green-500;
-      }
-    }
-
-    &--facebook {
-      fill: none;
-      stroke: $gray-800;
-      width: 22px;
-      height: 22px;
-
-      &:hover {
-        stroke: $green-500;
-      }
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-}
-
-/* Copyright */
-.copyright {
-  padding-top: 22px;
-  width: 100%;
-  border-top: 1px solid $gray-750;
-
-  &__logo {
-    fill: $gray-800;
-    width: 27px;
-    height: 34px;
-    transition: fill 0.2s linear;
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    transition: opacity 0.2s linear;
-
-    &:hover .copyright__logo {
-      fill: $green-500;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
-  &__text {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.1;
-    font-weight: 400;
-    color: $gray-900;
-  }
-}
-
 /*  Footer Media  */
 @media (min-width: 768px) {
   .footer {
@@ -396,33 +260,6 @@
       width: auto;
       padding-bottom: 0;
     }
-  }
-
-  .social {
-    margin-left: 25px;
-    padding: 0;
-
-    &__item {
-      width: 30px;
-      height: 22px;
-
-      &--instagram {
-        width: 23px;
-        height: 23px;
-      }
-
-      &--facebook {
-        width: 28px;
-        height: 33px;
-      }
-    }
-  }
-
-  .copyright {
-    justify-content: space-around;
-    width: 163px;
-    padding-top: 0;
-    border: none;
   }
 }
 

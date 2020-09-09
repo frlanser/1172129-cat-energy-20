@@ -1,0 +1,47 @@
+/* Copyright */
+.copyright {
+  padding-top: 22px;
+  width: 100%;
+  border-top: 1px solid $gray-750;
+
+  &__logo {
+    fill: $gray-800;
+    width: 27px;
+    height: 34px;
+    transition: fill 0.2s linear;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: opacity 0.2s linear;
+
+    &:hover .copyright__logo {
+      fill: $green-500;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: $gray-900;
+  }
+}
+
+/*  Copyright Media  */
+@media (min-width: 768px) {
+  .copyright {
+    justify-content: space-around;
+    width: 163px;
+    padding-top: 0;
+    border: none;
+  }
+}

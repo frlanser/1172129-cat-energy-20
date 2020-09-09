@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/styles.min.css">
   <title>Кэт энерджи</title>
 </head>
@@ -38,7 +39,7 @@
             <a class="nav__link  nav__link--white" href="form.html">Подбор программы</a>
           </nav>
 
-          <button class="nav-toggle" id="nav_toggle" type="button" aria-label="Меню">
+          <button class="nav-toggle  hidden" id="nav_toggle" type="button" aria-label="Меню">
             <span class="nav-toggle__item">Меню</span>
           </button>
         </div>
@@ -194,13 +195,13 @@
           </div>
 
           <div class="example__slider-range">
-            <p class="example__slider-text">было</p>
+            <button class="example__slider-text">было</button>
 
             <div class="example__slider-scale">
-              <div class="example__slider-toggle" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0"></div><!-- min max now надо вычеслять динамически, по ширине слайдера, например От 0 до 768-->
+              <button class="example__slider-toggle"></button><!-- min max now надо вычеслять динамически, по ширине слайдера, например От 0 до 768-->
             </div>
 
-            <p class="example__slider-text">стало</p>
+            <button class="example__slider-text">стало</button>
           </div>
         </div><!-- ./example__slider -->
 
@@ -226,7 +227,7 @@
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1595345413282!5m2!1sru!2sua"
-        style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0">
+        allowfullscreen="" aria-hidden="true" tabindex="0">
       </iframe>
     </div>
   </section>
@@ -278,7 +279,6 @@
   </footer>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 

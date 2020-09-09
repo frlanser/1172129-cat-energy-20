@@ -44,6 +44,11 @@
   }
 
   &__input {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: $gray-900;
+    line-height: 1.12;
     flex-grow: 1;
     margin-left: 13px;
     height: 45px;
@@ -53,9 +58,6 @@
     transition: border 0.2s linear;
 
     &::placeholder {
-      font-family: "Oswald", sans-serif;
-      font-size: 16px;
-      line-height: 1.12;
       color: $gray-900;
       text-transform: uppercase;
     }
@@ -69,6 +71,10 @@
     }
   }
 
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     appearance: none;
@@ -78,7 +84,7 @@
   /* selection items 2 */
   &__radio-wrapper {
     margin-bottom: 10px;
-    transition: opacity 0.2 linear;
+    transition: opacity 0.2s linear;
 
     &:last-child {
       margin-bottom: 0;
@@ -118,7 +124,7 @@
 
   &__radio:checked + label::before {
     background-color: #ffffff;
-    background-image: url("../img/radiobutton-active.svg");
+    background-image: url("../../img/radiobutton-active.svg");
   }
 
   /* стили при наведении курсора на checkbox */
@@ -177,14 +183,11 @@
     }
 
     &__input {
+      font-size: 20px;
+      line-height: 1.5;
       padding: 0 15px;
       height: 48px;
       margin-left: 20px;
-
-      &::placeholder {
-        font-size: 20px;
-        line-height: 1.5;
-      }
     }
 
     .selection__radio + label::before {

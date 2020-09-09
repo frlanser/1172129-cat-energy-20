@@ -1,13 +1,15 @@
-$(function() {
 
-  $("#nav").removeClass('active')
+{
+  const nav = document.querySelector("#nav");
+  const navToggle = document.querySelector("#nav_toggle");
 
-  $("#nav_toggle").on("click", function(event) {
+  nav.classList.remove('active');
+  navToggle.classList.remove('hidden');
+
+  navToggle.addEventListener('click', event => {
     event.preventDefault();
 
-    $(this).toggleClass("active");
-    $("#nav").toggleClass("active");
-  });
-
-
-});
+    navToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+  })
+}

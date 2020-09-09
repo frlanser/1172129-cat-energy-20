@@ -11,7 +11,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const pipeline = require("readable-stream").pipeline;
 const sync = require("browser-sync").create();
 
@@ -25,6 +25,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -149,6 +150,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", gulp.series(build, sync.reload));
+  gulp.watch("source/js/*.js",  gulp.series("Uglify"));
 }
 
 exports.default = gulp.series(
