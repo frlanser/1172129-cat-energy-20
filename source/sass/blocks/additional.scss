@@ -4,7 +4,8 @@
 
   &__list {
     list-style-type: none;
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 0 0 40px 0;
   }
 
   &__list-item {
@@ -18,7 +19,7 @@
   }
 
   &__list-title {
-    margin-bottom: 13px;
+    margin: 0 0 13px 0;
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -33,7 +34,7 @@
   }
 
   &__list-text {
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 1;
@@ -201,15 +202,15 @@
     }
 
     &__gift-icon {
-      top: 35%;
+      top: 34%;
       transform: translateY(-50%);
       left: 50%;
-      margin-left: -28px;
+      margin-left: -38px;
     }
 
     &__gift-text {
       text-align: center;
-      top: 70%;
+      top: 71%;
       left: 43px;
       margin-left: 0;
     }

@@ -1,6 +1,6 @@
 /* User-Contacts */
 .user-contacts {
-  margin: 32px 0 43px;
+  margin: 32px 0 40px;
 
   &__group {
     margin-bottom: 14px;
@@ -28,7 +28,7 @@
     &--mail {
       width: 20px;
       height: 14px;
-      top: 14px;
+      top: 15px;
       stroke: #222222;
     }
 
@@ -64,7 +64,8 @@
     }
 
     &:focus {
-      border: 2px solid $gray-900;
+      border-color: $gray-900;
+      box-shadow: 0 0 0 1px $gray-900;
     }
 
     &:focus + .user-contacts__icon--mail {
@@ -106,10 +107,10 @@
 
     &__icon {
       right: 20px;
-      top: 12px;
+      top: 14px;
 
       &--mail {
-        top: 14px;
+        top: 17px;
       }
     }
   }
