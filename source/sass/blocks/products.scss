@@ -15,6 +15,18 @@
     padding-left: 138px;
   }
 
+  &__photo-link {
+    display: block;
+  }
+
+  &__photo-link:focus img {
+    box-shadow: 0 0 0 2px black;
+  }
+
+  &__photo-link__special:focus svg {
+    box-shadow: 0 0 0 2px black;
+  }
+
   &__photo {
     position: absolute;
     top: 0;

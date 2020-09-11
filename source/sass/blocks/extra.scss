@@ -24,6 +24,10 @@
     user-select: none;
   }
 
+  &__checkbox:focus + label {
+    box-shadow: 0 0 0 2px black;
+  }
+
   &__checkbox + label::before {
     content: "";
     display: inline-block;

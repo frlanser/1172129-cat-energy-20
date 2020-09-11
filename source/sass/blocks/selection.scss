@@ -108,6 +108,10 @@
     user-select: none;
   }
 
+  &__radio:focus + label {
+    box-shadow: 0 0 0 2px black;
+  }
+
   &__radio + label::before {
     content: "";
     display: inline-block;
