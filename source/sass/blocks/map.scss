@@ -1,6 +1,12 @@
 /* Map */
 .map {
   width: 100%;
+  background: url("../../img/bg-map-mobile@1x.png") no-repeat center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+  }
 }
 
 .map iframe {
@@ -12,7 +18,25 @@
 
 /* Map Media */
 @media (min-width: 768px) {
+  .map {
+    background-image: url("../../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.png");
+    }
+  }
+
   .map iframe {
     min-height: 400px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .map {
+    background-image: url("../../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.png");
+    }
   }
 }
