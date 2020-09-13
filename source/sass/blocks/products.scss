@@ -111,6 +111,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 140px;
+    align-items: start;
 
     &__item {
       padding: 161px 36px 42px;

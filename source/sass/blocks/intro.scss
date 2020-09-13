@@ -126,5 +126,10 @@
     &__subtitle {
       padding-bottom: 52px;
     }
+
+    &__btn {
+      position: relative;
+      z-index: 2;
+    }
   }
 }

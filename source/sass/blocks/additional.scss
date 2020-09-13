@@ -158,6 +158,7 @@
     display: grid;
     grid-template-columns: 1fr 245px;
     column-gap: 79px;
+    align-items: start;
 
     &__list {
       margin-bottom: 0;
